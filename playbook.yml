@@ -1,0 +1,11 @@
+---
+
+- name: set up macbook pro
+  hosts: localhost
+  connection: local
+
+  vars_files:
+    - vars/user.yml
+
+  roles:
+    - common

@@ -1,0 +1,14 @@
+---
+
+# tasks file for common
+
+- name: include subtasks
+  include: "{{ subtask }}"
+  with_items:
+  # - debug.yml
+  - dotfiles.yml
+  - git.yml
+  - packages.yml
+  - vundle.yml
+  loop_control:
+    loop_var: subtask
