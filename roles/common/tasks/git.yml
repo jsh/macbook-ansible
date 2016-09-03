@@ -19,8 +19,11 @@
     with_items:
     - addfile
     - first
+    - remote-readonly
+    - remote-writable
     - scratch
-  
+    - tag-to-branch
+    -   
   - name: configure git
     copy: src=files/dot-gitconfig dest="{{ home }}/.gitconfig"
 
